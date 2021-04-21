@@ -13,4 +13,3 @@ close.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
     menu.classList.remove('active');
-});
