@@ -1,0 +1,69 @@
+/* HTML */
+<form action="#" class="contacts__form">
+                    <div class="contacts__input">
+                        <input name="name" id="name" type="text">
+                        <label for="name">Ваше имя</label>
+                    </div>
+
+                    <div class="contacts__input">
+                        <input name="email" id="email" type="email">
+                        <label for="email">Ваша почта</label>
+                    </div>
+
+                    <div class="contacts__textarea">
+                        <textarea name="text" id="text"></textarea>
+                        <label for="text">Ваше сообщение</label>
+                    </div>
+                    <div>
+                        <button class="contacts__btn btn">Отправить сообщение</button>
+                    </div>
+                </form>
+
+/* CSS */
+&__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        justify-content: space-between;
+        row-gap: 27px;
+        label {
+            display: block;
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            font-size: 12px;
+            background-color: #fff;
+            margin-bottom: 0;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            font-style: 12px;
+        }
+    }
+    &__btn {
+        border: none;
+        font-weight: 600;
+        transition: all .6s;
+        &:hover {
+            color: #fff;
+
+        }
+    }
